@@ -1,0 +1,31 @@
+GUIZI HUB — SCRIPT HUB
+
+PAINEL_ADM
+- Importar Keys em lote por TXT ou colagem.
+- Consultar, pesquisar, copiar e remover Keys.
+- Indicadores atualizados em tempo real.
+- Configurar o link de resgate.
+
+RESGATAR_KEY
+- Exibe a quantidade de Keys disponíveis.
+- Resgata uma Key disponível usando transação atômica.
+- Usa o mesmo banco do painel administrativo.
+
+FIREBASE
+Realtime Database: https://mestrexit-ia-default-rtdb.firebaseio.com/
+Projeto: mestrexit-ia
+Os dois módulos usam a mesma URL do Realtime Database.
+
+REGRAS PÚBLICAS
+O arquivo firebase-realtime-rules.json contém:
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+É necessário publicar essas regras na aba Realtime Database > Rules do Firebase Console.
+A inclusão do arquivo no ZIP não publica regras automaticamente.
+
+OBSERVAÇÃO
+As permissões públicas permitem que qualquer pessoa leia, crie, altere e apague todos os dados do banco. Não armazene dados privados nesse projeto.
